@@ -1,0 +1,61 @@
+.ponude{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-bottom: 9%;
+  h1{
+    font-size: 2.3rem;
+    color: #734704;
+    text-align: center;
+  }
+  .item-dash{
+    width: 100%;
+    text-align: center;
+    img{
+      height: 3px;
+      width: 300px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+  .b-ponude-1{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 3%;
+    overflow: hidden;
+    .b-hold-ponuda{
+      width: 100%;
+      max-width: 250px;
+      position: relative;
+      margin: 0 auto;
+    }
+    .item-img-ponuda{
+      width: 33.33333%;
+      text-align: center;
+      float: left;
+      margin-bottom: 20px;
+      .b-content-ponude{
+        width: 250px;
+        font-size: 1rem;
+        padding: 2%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        background-color: rgba(255, 255, 255, 0.6);
+        h1{
+          color: inherit;
+          font-size: 1.3rem;
+        }
+        p{
+          color: inherit;
+          font-size: 1.1rem;
+        }
+      }
+      img{
+        width: 250px;
+      }
+    }
+  }
+}
