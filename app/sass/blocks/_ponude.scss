@@ -7,6 +7,10 @@
     font-size: 2.3rem;
     color: #734704;
     text-align: center;
+    padding-top: 5%;
+    @include breakpoint(littlemobile){
+      font-size: 2rem;
+    }
   }
   .item-dash{
     width: 100%;
@@ -16,6 +20,9 @@
       width: 300px;
       margin: 0 auto;
       border-radius: 10px;
+      @include breakpoint(littlemobile){
+        width: 250px;
+      }
     }
   }
   .b-ponude-1{
@@ -29,12 +36,19 @@
       max-width: 250px;
       position: relative;
       margin: 0 auto;
+      @include breakpoint(mobile){
+        max-width: 300px;
+      }
     }
     .item-img-ponuda{
       width: 33.33333%;
       text-align: center;
       float: left;
       margin-bottom: 20px;
+      @include breakpoint(mobile){
+        width: 100%;
+        float: none;
+      }
       .b-content-ponude{
         width: 250px;
         font-size: 1rem;
@@ -44,6 +58,9 @@
         bottom: 0%;
         left: 0%;
         background-color: rgba(255, 255, 255, 0.6);
+        @include breakpoint(mobile){
+          width: 300px;
+        }
         h1{
           color: inherit;
           font-size: 1.3rem;
@@ -55,6 +72,9 @@
       }
       img{
         width: 250px;
+        @include breakpoint(mobile){
+          width: 300px;
+        }
       }
     }
   }

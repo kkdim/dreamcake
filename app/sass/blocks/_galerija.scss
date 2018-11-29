@@ -19,6 +19,9 @@
     color: #734704;
     text-align: center;
     padding-top: 0.5%;
+    @include breakpoint(littlemobile){
+      font-size: 2rem;
+    }
   }
   .item-dash{
     width: 100%;
@@ -27,6 +30,9 @@
       height: 3px;
       width: 220px;
       margin: 0 auto;
+      @include breakpoint(littlemobile){
+        width: 180px;
+      }
     }
   }
   .b-galerija-hold{
@@ -43,10 +49,18 @@
       text-align: center;
       margin-left: 3%;
       margin-right: 3%;
+      @include breakpoint(mobile){
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+      }
       img{
         -webkit-filter: brightness(0.3);
         filter: brightness(0.3);
         transition: 0.8s;
+        @include breakpoint(littlemobile){
+          max-width: 300px;
+        }
       }
       img:hover{
         -webkit-filter: brightness(0.8);
@@ -70,10 +84,18 @@
       margin-bottom: 35px;
       margin-left: 3%;
       margin-right: 3%;
+      @include breakpoint(mobile){
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+      }
       img{
         -webkit-filter: brightness(0.3);
         filter: brightness(0.3);
         transition: 0.8s;
+        @include breakpoint(littlemobile){
+          max-width: 300px;
+        }
       }
       img:hover{
         -webkit-filter: brightness(0.8);
@@ -96,10 +118,18 @@
       text-align: center;
       margin-left: 3%;
       margin-right: 3%;
+      @include breakpoint(mobile){
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+      }
       img{
         -webkit-filter: brightness(0.3);
         filter: brightness(0.3);
         transition: 0.8s;
+        @include breakpoint(littlemobile){
+          max-width: 300px;
+        }
       }
       img:hover{
         -webkit-filter: brightness(0.8);
@@ -122,10 +152,18 @@
       text-align: center;
       margin-left: 3%;
       margin-right: 3%;
+      @include breakpoint(mobile){
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+      }
       img{
         -webkit-filter: brightness(0.3);
         filter: brightness(0.3);
         transition: 0.8s;
+        @include breakpoint(littlemobile){
+          max-width: 300px;
+        }
       }
       img:hover{
         -webkit-filter: brightness(0.8);

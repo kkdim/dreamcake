@@ -98,9 +98,18 @@
     .b-media {
       width: 100%;
       padding-top: 6%;
-      padding-bottom: 9%;
+      padding-bottom: 4%;
       position: relative;
       overflow: hidden;
+      @include breakpoint(mobile){
+        padding-top: 7%;
+      }
+      @include breakpoint(littlemobile){
+        padding-top: 8%;
+      }
+      @include breakpoint(littlemobile_1){
+        padding-top: 12.2%;
+      }
       .b-media-img{
         width: 100%;
         max-width: 870px;
@@ -113,12 +122,33 @@
           line-height: 25px;
           padding: 2%;
           background-color: rgba(255, 255, 255, 0.85);
+          @include breakpoint(mobile){
+            line-height: 20px;
+          }
+          @include breakpoint(littlemobile){
+            width: 100%;
+            text-align: center;
+            margin: 0;
+          }
           h1{
             font-size: 1.5rem;
             margin-bottom: 10px;
+            @include breakpoint(mobile){
+              font-size: 1.4rem;
+              margin-bottom: 8px;
+            }
+            @include breakpoint(littlemobile){
+              margin-bottom: 0px;
+            }
           }
           p{
             font-size: 1.1rem;
+            @include breakpoint(mobile){
+              font-size: 1rem;
+            }
+            @include breakpoint(littlemobile){
+              display: none;
+            }
           }
         }
         .item-chef{
@@ -133,12 +163,14 @@
     }
     .b-main-content{
       width: 100%;
-      max-width: 1140px;
+      max-width: 990px;
       overflow: hidden;
-      padding-left: 11%;
-      padding-right: 11%;
+      margin: 0 auto;
+      padding-left: 5%;
+      padding-right: 5%;
       padding-top: 7%;
       z-index: 10001;
+
       img{
         height: 3px;
         width: 45px;
@@ -150,12 +182,18 @@
         color: #734704;
         padding-bottom: 2%;
         padding-left: 1%;
+        @include breakpoint(littlemobile){
+          font-size: 2rem;
+        }
       }
       p{
         width: 100%;
         font-size: 1.3rem;
         line-height: 33px;
         padding-left: 1%;
+        @include breakpoint(littlemobile){
+          font-size: 1.2rem;
+        }
       }
     }
   }
