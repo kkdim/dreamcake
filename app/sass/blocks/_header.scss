@@ -1,6 +1,29 @@
 .header {
   width: 100%;
   margin: 0 auto;
+  .item-background{
+    max-width: 1400px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    @include breakpoint(littlemobile){
+      width: 100%;
+      max-width: 100%;
+    }
+    img{
+      max-width: 1400px;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.074;
+      @include breakpoint(mobile){
+        width: 100%;
+        max-width: 100%;
+        padding-top: 135%;
+        opacity: 0.15;
+      }
+    }
+  }
   .wrapper{
     width: 100%;
     max-width: 1140px;
@@ -55,7 +78,7 @@
         z-index: 1000;
         @include breakpoint(mobile){
           display: none;
-          padding-top: 45px;
+          padding-top: 80px;
           opacity: 0.9;
         }
         li{
@@ -67,12 +90,18 @@
           @include breakpoint(mobile){
             width: 100%;
             display: block;
-            font-size: 0.84rem;
-            line-height: 40px;
-            margin-right: 0
-          }
-          li:first-child{
+            font-size: 1rem;
+            line-height: 50px;
             margin-right: 0;
+            padding: 1%;
+            border-top: solid 0.1px;
+          }
+          span .b-border{
+            margin-right: 0;
+            border-bottom: solid 0.1px;
+            @include breakpoint(mobile){
+              border-bottom: solid 0.1px;
+            }
           }
           a{
             text-decoration: none;
@@ -112,16 +141,19 @@
       }
       .b-media-img{
         width: 100%;
-        max-width: 870px;
+        max-width: 700px;
         margin: 0px auto;
         position: relative;
         overflow: hidden;
         .item-content{
           position: absolute;
-          bottom: 0;
+          text-align: center;
+          bottom: 3.7px;
+          width: 100%;
+          max-width: 700px;
           line-height: 25px;
           padding: 2%;
-          background-color: rgba(255, 255, 255, 0.85);
+          background-color: rgba(230, 179, 126, 0.75);
           @include breakpoint(mobile){
             line-height: 20px;
           }
@@ -131,14 +163,14 @@
             margin: 0;
           }
           h1{
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.4rem;
             @include breakpoint(mobile){
               font-size: 1.4rem;
               margin-bottom: 8px;
             }
             @include breakpoint(littlemobile){
               margin-bottom: 0px;
+              font-size: 1.2rem
             }
           }
           p{
@@ -156,20 +188,22 @@
           overflow: hidden;
           img{
             width: 100%;
-            max-width: 870px;
+            max-width: 700px;
           }
         }
       }
     }
     .b-main-content{
       width: 100%;
-      max-width: 990px;
+      max-width: 740px;
       overflow: hidden;
       margin: 0 auto;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 7%;
+      padding: 20px;
+      padding-top: 6%;
       z-index: 10001;
+      @include breakpoint(littlemobile){
+        padding-top: 15%;
+      }
 
       img{
         height: 3px;
@@ -180,7 +214,7 @@
       h1{
         font-size: 2.1rem;
         color: #734704;
-        padding-bottom: 2%;
+        padding-bottom: 5%;
         padding-left: 1%;
         @include breakpoint(littlemobile){
           font-size: 2rem;
@@ -193,6 +227,17 @@
         padding-left: 1%;
         @include breakpoint(littlemobile){
           font-size: 1.2rem;
+        }
+      }
+      p:last-child{
+        width: 100%;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 33px;
+        padding-left: 1%;
+        @include breakpoint(littlemobile){
+        font-size: 1rem;
         }
       }
     }

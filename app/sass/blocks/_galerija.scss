@@ -3,6 +3,9 @@
   overflow: hidden;
   margin: 0 auto;
   padding-bottom: 8%;
+  @include breakpoint(littlemobile){
+    margin: 20% auto;
+  }
   .item-background{
     max-width: 1400px;
     position: relative;
@@ -59,7 +62,7 @@
         filter: brightness(0.3);
         transition: 0.8s;
         @include breakpoint(littlemobile){
-          max-width: 300px;
+          max-width: 270px;
         }
       }
       img:hover{
@@ -74,6 +77,9 @@
         top: 45%;
         left: 35%;
         color: #ffff;
+        @include breakpoint(littlemobile){
+          left: 38%;
+        }
       }
     }
     .b-galerija-2{
@@ -94,7 +100,7 @@
         filter: brightness(0.3);
         transition: 0.8s;
         @include breakpoint(littlemobile){
-          max-width: 300px;
+          max-width: 270px;
         }
       }
       img:hover{
@@ -109,6 +115,9 @@
         top: 45%;
         left: 36%;
         color: #ffff;
+        @include breakpoint(littlemobile){
+          left: 38%;
+        }
       }
     }
     .b-galerija-3{
@@ -128,7 +137,7 @@
         filter: brightness(0.3);
         transition: 0.8s;
         @include breakpoint(littlemobile){
-          max-width: 300px;
+          max-width: 270px;
         }
       }
       img:hover{
@@ -143,6 +152,9 @@
         top: 45%;
         left: 36%;
         color: #ffff;
+        @include breakpoint(littlemobile){
+          left: 38%;
+        }
       }
     }
     .b-galerija-4{
@@ -162,7 +174,7 @@
         filter: brightness(0.3);
         transition: 0.8s;
         @include breakpoint(littlemobile){
-          max-width: 300px;
+          max-width: 270px;
         }
       }
       img:hover{
@@ -177,6 +189,9 @@
         top: 45%;
         left: 36%;
         color: #ffff;
+        @include breakpoint(littlemobile){
+          left: 38%;
+        }
       }
     }
   }
