@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 7%;
   .item-background{
     max-width: 1400px;
     width: 100%;
@@ -23,6 +24,9 @@
         opacity: 0.15;
       }
     }
+  }
+  .off{
+    display: block;
   }
   .wrapper{
     width: 100%;
@@ -145,6 +149,117 @@
         }
       }
     }
+    .nav-2{
+      .item-logo{
+        position: fixed;
+        z-index: 20000001;
+        padding-right: 0.1%;
+        img{
+          padding: 1%;
+          max-width: 145px;
+        }
+      }
+      .item-menu{
+        width: 100%;
+        max-width: 1440px;
+        position: fixed;
+        list-style: none;
+        background-color: #ffff;
+        opacity: 0.8;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        z-index: 10001;
+        img{
+          width: 40px;
+          float: right;
+          margin-right: 20px;
+          display: none;
+          cursor: pointer;
+          @include breakpoint(mobile){
+            display: block;
+            z-index: 100000001;
+          }
+        }
+      }
+      ul{
+        width: 100%;
+        max-width: 1140px;
+        list-style: none;
+        opacity: 0.7;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+        @include breakpoint(mobile){
+          display: none;
+          padding-top: 80px;
+          opacity: 0.9;
+        }
+        .item-social{
+          display: none;
+          @include breakpoint(mobile){
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+            font-size: 1rem;
+          }
+        }
+        .item-social img{
+          max-width: 45px;
+          transition: 0.1s;
+          @include breakpoint(littlemobile){
+            max-width: 30px;
+            border-radius: 7px;
+          }
+        }
+        li{
+          display: inline-block;
+          float: right;
+          font-size: 0.84rem;
+          line-height: 40px;
+          margin-right: 1%;
+          @include breakpoint(mobile){
+            width: 100%;
+            display: block;
+            font-size: 1rem;
+            line-height: 50px;
+            margin-right: 0;
+            padding: 1%;
+            border-top: solid 0.1px;
+          }
+          span .b-border{
+            margin-right: 0;
+            border-bottom: solid 0.1px;
+            @include breakpoint(mobile){
+              border-bottom: solid 0.1px;
+            }
+          }
+          a{
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            color: #734704;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: 0.5s;
+          }
+          a:hover {
+            color: #ffff;
+            background-color: #734704;
+          }
+          a.active {
+           background-color: #ffff;
+           color: #444;
+           cursor: default;
+         }
+        }
+      }
+    }
     .b-media {
       width: 100%;
       padding-top: 6%;
@@ -168,18 +283,20 @@
         overflow: hidden;
         .item-content{
           position: absolute;
+          color: white;
           text-align: center;
-          bottom: 3.7px;
+          bottom: 12%;
+          left: 12%;
           width: 100%;
-          max-width: 700px;
+          max-width: 500px;
           line-height: 25px;
           padding: 2%;
-          background-color: rgba(230, 179, 126, 0.75);
           @include breakpoint(mobile){
             line-height: 20px;
           }
           @include breakpoint(littlemobile){
             width: 100%;
+            max-width: 300px;
             text-align: center;
             margin: 0;
           }
@@ -191,7 +308,7 @@
             }
             @include breakpoint(littlemobile){
               margin-bottom: 0px;
-              font-size: 1.2rem
+              font-size: 1rem
             }
           }
           p{
