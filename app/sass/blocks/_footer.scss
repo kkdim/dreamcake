@@ -5,15 +5,14 @@
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding-bottom: 5%;
     .item-dash{
       width: 100%;
       text-align: center;
       img{
         height: 3.2px;
-        width: 350px;
+        width: 100%;
         @include breakpoint(littlemobile){
-          width: 300px;
+          width: 100%;
         }
       }
     }

@@ -88,6 +88,9 @@
           left: 22%;
           font-size: 1.8rem;
         }
+        @include breakpoint(littlemobile_1){
+          left: 16%;
+        }
       }
     }
     .b-galerija-2{
@@ -126,6 +129,9 @@
         @include breakpoint(littlemobile){
           left: 21%;
           font-size: 1.8rem;
+        }
+        @include breakpoint(littlemobile_1){
+          left: 16%;
         }
       }
     }
@@ -213,12 +219,15 @@
   @include breakpoint(littlemobile){
     margin: 0 auto;
     width: 100%;
-    max-width: 330px;
+    max-width: 270px;
     }
   img{
     transition: 1s;
     padding: 15px;
     width: 330px;
+    @include breakpoint(littlemobile){
+     width: 270px;
+    }
   }
   img:hover{
     filter: grayscale(100%);

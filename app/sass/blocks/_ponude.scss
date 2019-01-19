@@ -2,6 +2,9 @@
   width: 100%;
   overflow: hidden;
   padding-bottom: 14%;
+  @include breakpoint(littlemobile){
+    padding-bottom: 30%;
+  }
   .item-background{
     width: 100%;
     max-width: 1140px;
@@ -49,54 +52,95 @@
   }
   .b-ponude-1{
     width: 100%;
-    max-width: 900px;
+    max-width: 450px;
     margin: 0 auto;
-    padding-top: 3%;
+    margin-top: 5%;
     overflow: hidden;
-    .b-menu{
-      background-image: url("../img/papirus.jpg");
-      border-radius:15px;
-      padding: 15px;
-      overflow: hidden;
-      .b-menu-1{
-        padding: 15px;
-        float: left;
-        max-width: 450px;
-        border-radius: 15px;
-        border-right: 2px solid #734704;
-        border-bottom: 2px solid #734704;
-        border-top: 2px solid #734704;
-        p{
-        color: #3f3b3b;
-        line-height: 22px;
-        font-size: 15px;
-        }
-        h2{
-          line-height: 30px;
-          font-size: 1.15rem;
-        }
-      }
-      .b-menu-2{
-        padding: 15px;
-        float: right;
-        max-width: 450px;
-        border-radius: 15px;
-        border-left: 2px solid #734704;
-        border-bottom: 2px solid #734704;
-        border-top: 2px solid #734704;
-        p{
-        color: #3f3b3b;
-        line-height: 22px;
-        font-size: 15px;
-        }
-        h2{
-          line-height: 30px;
-          font-size: 1.15rem;
-        }
+    border-radius:15px;
+    text-align: center;
+    .item-dash{
+      width: 100%;
+      text-align: center;
+      img{
+        height: 1px;
+        width: 100%;
+        margin: 0 auto;
       }
     }
-    @include breakpoint(mobile){
-      padding-top: 8%;
+    background-image: url("../img/papirus.jpg");
+    @include breakpoint(littlemobile){
+      border-radius:0px;
+    }
+    .b-hold-slano{
+      width: 100%;
+      max-width: 350px;
+      overflow: hidden;
+      padding: 30px;
+      margin:0 auto;
+      @include breakpoint(littlemobile){
+      float: none;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+      h1{
+        color: #bf880c;
+        line-height: 30px;
+        font-size: 1.5rem;
+        padding-top: 0%;
+        margin-bottom: 15px;
+        @include breakpoint(littlemobile){
+          text-align: center;
+        }
+      }
+      p{
+        font-size: 1.35rem;
+        line-height: 18px;
+        color: #504b4b;
+      }
+    }
+    .b-hold-slano:hover{
+      opacity: 0.8;
+      transform: scale(1.01);
+    }
+    .b-hold-slatko{
+      width: 100%;
+      max-width: 350px;
+      overflow: hidden;
+      padding: 30px;
+      margin:0 auto;
+      @include breakpoint(littlemobile){
+      text-align: center;
+      float: none;
+      margin: 0 auto;
+      padding: 20px;
+    }
+      h1{
+        color: #c50000;
+        line-height: 30px;
+        font-size: 1.5rem;
+        padding-top: 0%;
+        margin-bottom: 15px;
+        @include breakpoint(littlemobile){
+          text-align: center;
+        }
+      }
+      p{
+        font-size: 1.35rem;
+        line-height: 18px;
+        color: #504b4b;
+      }
+    }
+    .b-hold-slatko:hover{
+      opacity: 0.8;
+      transform: scale(1.01);
     }
   }
+}
+.ponuda-slana{
+  max-width: 1000px;
+  background-color: rgba(121, 74, 7, 0.3);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 30px;
 }

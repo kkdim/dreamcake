@@ -1,6 +1,6 @@
 @mixin breakpoint($point) {
   @if $point == littlemobile_1 {
-     @media (max-width: 500px)  { @content ; }
+     @media (max-width: 321px)  { @content ; }
   }
   @if $point == littlemobile {
      @media (max-width: 600px)  { @content ; }
