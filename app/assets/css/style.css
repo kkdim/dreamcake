@@ -405,7 +405,7 @@ a:hover, a:active, a:focus {
 .ponude {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 14%; }
+  padding-bottom: 10%; }
   @media (max-width: 600px) {
     .ponude {
       padding-bottom: 30%; } }
@@ -755,7 +755,7 @@ a:hover, a:active, a:focus {
       width: 100%;
       text-align: center; }
       .footer .wrapper .item-dash img {
-        height: 3.2px;
+        height: 2px;
         width: 100%; }
         @media (max-width: 600px) {
           .footer .wrapper .item-dash img {
