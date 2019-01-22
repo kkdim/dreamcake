@@ -11,8 +11,10 @@
       img{
         height: 2px;
         width: 100%;
+        max-width: 320px;
         @include breakpoint(littlemobile){
           width: 100%;
+          max-width: 275px;
         }
       }
     }

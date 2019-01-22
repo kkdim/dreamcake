@@ -84,6 +84,9 @@
         top: 45%;
         left: 14%;
         color: #ffff;
+        @include breakpoint(mobile){
+         left: 30%;
+        }
         @include breakpoint(littlemobile){
           left: 22%;
           font-size: 1.8rem;
@@ -126,6 +129,9 @@
         top: 45%;
         left: 14%;
         color: #ffff;
+        @include breakpoint(mobile){
+          left: 30%;
+        }
         @include breakpoint(littlemobile){
           left: 21%;
           font-size: 1.8rem;
@@ -167,6 +173,9 @@
         top: 45%;
         left: 36%;
         color: #ffff;
+        @include breakpoint(ipad){
+          left: 41%;
+        }
         @include breakpoint(littlemobile){
           left: 38%;
         }
@@ -204,6 +213,9 @@
         top: 45%;
         left: 36%;
         color: #ffff;
+        @include breakpoint(ipad){
+          left: 41%;
+        }
         @include breakpoint(littlemobile){
           left: 38%;
         }
@@ -216,17 +228,23 @@
   max-width: 1350px;
   margin: 0 auto;
   padding-bottom: 10%;
+  @include breakpoint(ipad){
+    max-width: 550px;
+  }
   @include breakpoint(littlemobile){
     margin: 0 auto;
     width: 100%;
     max-width: 270px;
-    }
+  }
   img{
     transition: 1s;
     padding: 15px;
     width: 330px;
+    @include breakpoint(ipad){
+      max-width: 270px;
+    }
     @include breakpoint(littlemobile){
-     width: 270px;
+      width: 270px;
     }
   }
   img:hover{
